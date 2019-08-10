@@ -1,7 +1,7 @@
-const express = require('express')
+const express  = require('express')
 const mongoose = require('mongoose')
-const cors = require('cors')
-const routes = require('./routes')
+const cors     = require('cors')
+const routes   = require('./routes')
 
 const server = express()
 
@@ -12,4 +12,4 @@ mongoose.connect('mongodb+srv://tindev:tindev@cluster0-ueoot.mongodb.net/tindev?
 server.use(cors())
 server.use(express.json())
 server.use(routes)
-server.listen(3000)
+server.listen(5000)
